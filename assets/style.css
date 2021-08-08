@@ -15,6 +15,9 @@
   header {
     padding: 20px 35px;
     background-color: #4cdbff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   
   header h1 {
@@ -60,4 +63,5 @@
       font-family: sans-serif;
       font-weight: bold;
       padding: 0 0 30px 0;
+      text-align: center;
   }

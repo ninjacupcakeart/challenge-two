@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #a95aee;
+  --secondary-color: #4cdbff;
+  --tertiary-color: #43d966;
+  --quarternary-color: #ee80e4;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,48 +15,94 @@
     color: #a95aee;
     font-family: Impact, Helvetica, sans-serif;
   }
-  
-  
-  /* HEADER / NAV BAR STYLES START */
-  
+    
   header {
     padding: 20px 35px;
-    background-color: #4cdbff;
-    position: -webkit-sticky;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
+    background-image: url("./images/nc-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
   }
   
   header h1 {
     font-weight: bold;
-    display: inline;
     margin: 0;
-    font-size: 48px;
-    color: #a95aee;
-    text-decoration: #43d966;
+    font-size: 36px;
+    color: var(--quarternary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header a {
     text-decoration: none;
-    color: #a95aee;
+    color: var(--quarternary-color);
   }
   
   header nav {
-    float: right;
-    margin: 18px 0;
+    margin: 7px 0;
   }
   
-  header nav ul li {
-    display: inline;
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
   }
   
   header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
-    font-size: 26px;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
-  /* HEADER / NAVBAR STYLES END */
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  footer {
+    background-image: url("./images/nc-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h3 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+    font-size: 28px;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer a {
+    color: var(--quarternary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 
   h2 {
     font-weight: bold;
@@ -64,4 +117,17 @@
       font-weight: bold;
       padding: 0 0 30px 0;
       text-align: center;
+  }
+
+  .featured p {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0 0 30px 0;
+    text-align: center;
+  }
+
+  .ninja video {
+    display: block;
+    margin: auto;
+    padding: 15px;
   }

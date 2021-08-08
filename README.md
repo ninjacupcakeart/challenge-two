@@ -1,4 +1,5 @@
 Ninja Cupcake Portfolio!!
+
 CRITERIA:
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio

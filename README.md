@@ -1,5 +1,7 @@
 Ninja Cupcake Portfolio!!
 
+This is a mix between Ninja Cupcake, and my authentic self. I've been running ninja cupcake for a long time, and i thought it would be fun to try to make this the best of both worlds!
+
 CRITERIA:
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio

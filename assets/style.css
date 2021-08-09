@@ -119,8 +119,9 @@
       text-align: center;
   }
 
-  .ninja img {
-    display: block;
+  .about img {
     margin: auto;
-    padding: 15px;
+    display: inline;
+    width: 35%;
+    height: auto;
   }
